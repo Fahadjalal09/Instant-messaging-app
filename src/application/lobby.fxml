@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="597.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.lobbyController">
+   <children>
+      <AnchorPane prefHeight="599.0" prefWidth="750.0">
+         <children>
+            <Label layoutX="242.0" layoutY="14.0" prefHeight="78.0" prefWidth="267.0" text="Cafe Talk">
+               <font>
+                  <Font name="Times New Roman" size="66.0" />
+               </font>
+            </Label>
+            <Separator layoutY="95.0" prefHeight="0.0" prefWidth="750.0" />
+            <Separator layoutX="551.0" layoutY="95.0" orientation="VERTICAL" prefHeight="502.0" prefWidth="10.0" />
+            <Label layoutX="201.0" layoutY="110.0" text="Messages">
+               <font>
+                  <Font name="Times New Roman" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="621.0" layoutY="110.0" text="Users">
+               <font>
+                  <Font name="Times New Roman" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="msg_writer" layoutY="544.0" onKeyPressed="#msg_send" prefHeight="52.0" prefWidth="469.0" />
+            <Button layoutX="469.0" layoutY="544.0" mnemonicParsing="false" onAction="#send_msg" prefHeight="52.0" prefWidth="82.0" text="Send">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="Msg_id" editable="false" layoutY="154.0" prefHeight="390.0" prefWidth="552.0">
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="user_id" editable="false" layoutX="555.0" layoutY="154.0" prefHeight="443.0" prefWidth="195.0">
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font></TextArea>
+            <Button layoutX="24.0" layoutY="41.0" mnemonicParsing="false" onAction="#goto_signin" text="Quit" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

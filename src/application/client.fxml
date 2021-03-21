@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="597.0" prefWidth="750.0" styleClass="root" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.clientController">
+   <children>
+      <AnchorPane prefHeight="599.0" prefWidth="750.0" stylesheets="@application.css">
+         <children>
+            <Label layoutX="242.0" layoutY="14.0" prefHeight="78.0" prefWidth="267.0" styleClass="lable" text="Cafe Talk">
+               <font>
+                  <Font name="Times New Roman" size="66.0" />
+               </font>
+            </Label>
+            <Separator layoutX="550.0" layoutY="134.0" orientation="VERTICAL" prefHeight="463.0" prefWidth="11.0" />
+            <Label layoutX="201.0" layoutY="146.0" styleClass="lable" text="Messages">
+               <font>
+                  <Font name="Times New Roman" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="621.0" layoutY="146.0" styleClass="lable" text="Users">
+               <font>
+                  <Font name="Times New Roman" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="msg_writer" layoutY="544.0" onKeyPressed="#msg_send" prefHeight="52.0" prefWidth="469.0" />
+            <Button layoutX="469.0" layoutY="544.0" mnemonicParsing="false" onAction="#send_msg" prefHeight="52.0" prefWidth="82.0" stylesheets="@application.css" text="Send">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="Msg_id" editable="false" layoutY="177.0" prefHeight="367.0" prefWidth="553.0" stylesheets="@application.css">
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="msg" />
+                  <String fx:value="content" />
+               </styleClass>
+            </TextArea>
+            <Button layoutX="24.0" layoutY="41.0" mnemonicParsing="false" onAction="#goto_signin" stylesheets="@application.css" text="Quit" />
+            <ListView fx:id="user_id" layoutX="555.0" layoutY="177.0" prefHeight="367.0" prefWidth="194.0" styleClass="msg" stylesheets="@application.css" />
+            <Button layoutX="556.0" layoutY="544.0" mnemonicParsing="false" onAction="#show_user_info" prefHeight="52.0" prefWidth="194.0" stylesheets="@application.css" text="Show Info">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font>
+            </Button>
+            <Label fx:id="name" layoutX="242.0" layoutY="93.0" prefHeight="41.0" prefWidth="267.0" styleClass="lable" text="             " textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="21.0" />
+               </font>
+            </Label>
+            <Separator layoutX="31.0" layoutY="130.0" prefHeight="8.0" prefWidth="698.0" />
+            <Separator layoutX="31.0" layoutY="85.0" prefHeight="8.0" prefWidth="698.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

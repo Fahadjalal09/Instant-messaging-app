@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="329.0" prefWidth="462.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.user_infoController">
+   <children>
+      <Pane prefHeight="371.0" prefWidth="462.0">
+         <children>
+            <Label layoutX="130.0" layoutY="14.0" prefHeight="51.0" prefWidth="202.0" styleClass="lable" text="User Information" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="73.0" prefHeight="51.0" prefWidth="98.0" styleClass="lable" text="First Name: ">
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="141.0" prefHeight="51.0" prefWidth="98.0" styleClass="lable" text="Last Name: ">
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="209.0" prefHeight="51.0" prefWidth="98.0" styleClass="lable" text="Email: ">
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="277.0" prefHeight="51.0" prefWidth="98.0" styleClass="lable" text="Gender: ">
+               <font>
+                  <Font name="Times New Roman" size="19.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="f_name" editable="false" layoutX="131.0" layoutY="73.0" prefHeight="51.0" prefWidth="299.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="l_name" editable="false" layoutX="131.0" layoutY="141.0" prefHeight="51.0" prefWidth="299.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="emzil_id" editable="false" layoutX="131.0" layoutY="209.0" prefHeight="51.0" prefWidth="299.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="g_box" editable="false" layoutX="131.0" layoutY="277.0" prefHeight="51.0" prefWidth="299.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextArea>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

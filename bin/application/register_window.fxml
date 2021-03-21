@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.register_windowController">
+   <children>
+      <AnchorPane fx:id="register_window" prefHeight="597.0" prefWidth="750.0">
+         <children>
+            <Label layoutX="258.0" layoutY="14.0" styleClass="lable" text="Cafe Talk">
+               <font>
+                  <Font name="Times New Roman" size="66.0" />
+               </font>
+            </Label>
+            <Label layoutX="335.0" layoutY="103.0" styleClass="lable" text="Register">
+               <font>
+                  <Font name="Times New Roman" size="33.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="152.0" prefHeight="42.0" prefWidth="128.0" styleClass="lable" text="First Name">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="201.0" prefHeight="42.0" prefWidth="128.0" styleClass="lable" text="Last Name">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="250.0" prefHeight="42.0" prefWidth="128.0" styleClass="lable" text="Gender">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="299.0" prefHeight="42.0" prefWidth="128.0" styleClass="lable" text="Email">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="350.0" prefHeight="42.0" prefWidth="128.0" styleClass="lable" text="Password">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="227.0" layoutY="439.0" mnemonicParsing="false" onAction="#get_registeration" prefHeight="60.0" prefWidth="326.0" text="Register">
+               <font>
+                  <Font name="Times New Roman" size="33.0" />
+               </font>
+            </Button>
+            <Button layoutX="227.0" layoutY="509.0" mnemonicParsing="false" onAction="#got_signin" prefHeight="60.0" prefWidth="326.0" text="Sign In">
+               <font>
+                  <Font name="Times New Roman" size="33.0" />
+               </font>
+            </Button>
+            <TextField fx:id="first_name" layoutX="303.0" layoutY="152.0" prefHeight="42.0" prefWidth="263.0" />
+            <TextField fx:id="last_name" layoutX="303.0" layoutY="201.0" prefHeight="42.0" prefWidth="263.0" />
+            <ComboBox fx:id="gender_box" layoutX="303.0" layoutY="250.0" prefHeight="42.0" prefWidth="263.0" promptText="Select" />
+            <TextField fx:id="email_id" layoutX="303.0" layoutY="299.0" prefHeight="42.0" prefWidth="263.0" />
+            <PasswordField fx:id="id_password" layoutX="303.0" layoutY="350.0" prefHeight="42.0" prefWidth="263.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
